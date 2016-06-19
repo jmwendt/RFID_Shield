@@ -1662,6 +1662,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1689,6 +1691,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <instance part="SUPPLY1" gate="G$1" x="152.4" y="124.46"/>
 <instance part="GND1" gate="1" x="182.88" y="124.46" rot="R180"/>
 <instance part="GND2" gate="1" x="152.4" y="104.14"/>
+<instance part="SUPPLY2" gate="G$1" x="73.66" y="116.84"/>
+<instance part="GND3" gate="1" x="73.66" y="86.36"/>
 </instances>
 <busses>
 </busses>
@@ -1711,6 +1715,20 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="180.34" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="119.38" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND@2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="83.82" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="101.6" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GND@1"/>
+<wire x1="73.66" y1="99.06" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="96.52" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
+<junction x="73.66" y="99.06"/>
+<pinref part="J1" gate="G$1" pin="GND@0"/>
+<wire x1="83.82" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<junction x="73.66" y="96.52"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -1729,6 +1747,12 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <wire x1="154.94" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="121.92" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="5V"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="83.82" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="109.22" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED" class="0">

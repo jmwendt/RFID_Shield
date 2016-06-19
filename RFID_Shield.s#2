@@ -1638,6 +1638,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <attributes>
 <attribute name="CNAME" value="DataDyne Technologies, LLC"/>
 <attribute name="DESIGNER" value="Jake Wendt"/>
+<attribute name="REV" value="1.0"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -1646,7 +1647,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
+<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="">
+<attribute name="DESIGNER" value="Jake Wendt"/>
+</part>
 <part name="J1" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device=""/>
 <part name="LED1" library="SparkFun" deviceset="LED" device="0603" value="GRN"/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="330"/>
@@ -1663,9 +1666,13 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <sheets>
 <sheet>
 <plain>
+<text x="279.4" y="7.62" size="2.54" layer="91">&gt;REV</text>
+<text x="210.82" y="10.16" size="2.54" layer="91">&gt;DESIGNER</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="43.18" y="0"/>
+<instance part="FRAME1" gate="G$1" x="43.18" y="0">
+<attribute name="DESIGNER" x="43.18" y="0" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="FRAME1" gate="V" x="190.5" y="0"/>
 <instance part="J1" gate="G$1" x="96.52" y="119.38"/>
 <instance part="LED1" gate="G$1" x="236.22" y="124.46"/>
